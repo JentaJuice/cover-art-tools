@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Navigation } from "../../Components/Navigation";
-import { Cover } from "./CoverCrop";
 import { Resolution } from "./ResolutionCalculator";
 
 export function HomePage() {
@@ -9,9 +8,7 @@ export function HomePage() {
   const PageLoad = () => {
     let returnVar;
 
-    if (page == "cover") {
-      returnVar = <Cover />;
-    } else if (page == "calculator") {
+    if (page == "calculator") {
       returnVar = <Resolution />;
     } else {
       returnVar = <></>;

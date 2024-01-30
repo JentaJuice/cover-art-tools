@@ -22,13 +22,6 @@ export const Navigation = (comp: components) => {
         </div>
         <button
           className="text-center md:text-left p-4 w-full border-solid border-0 border-b-whitesmoke border-opacity-0 hover:border-b-2 hover:border-opacity-100 hover:opacity-60 disabled:border-b-2 disabled:border-opacity-100 disabled:opacity-60"
-          onClick={() => comp.page("cover")}
-          disabled={comp.current == "cover"}
-        >
-          Cover Cropping
-        </button>
-        <button
-          className="text-center md:text-left p-4 w-full border-solid border-0 border-b-whitesmoke border-opacity-0 hover:border-b-2 hover:border-opacity-100 hover:opacity-60 disabled:border-b-2 disabled:border-opacity-100 disabled:opacity-60"
           onClick={() => comp.page("calculator")}
           disabled={comp.current == "calculator"}
         >
