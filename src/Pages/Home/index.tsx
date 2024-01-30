@@ -22,7 +22,7 @@ export function HomePage() {
     <>
       <div className="w-full h-screen flex md:flex-row flex-col">
         <div className="w-full md:w-[30%]">
-          <Navigation page={setPage} />
+          <Navigation page={setPage} current={page} />
         </div>
         <div className="w-full md:w-full">
           <PageLoad />
