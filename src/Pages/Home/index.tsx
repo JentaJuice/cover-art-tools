@@ -11,8 +11,10 @@ export function HomePage() {
 
     if (page == "cover") {
       returnVar = <Cover />;
-    } else {
+    } else if (page == "calculator") {
       returnVar = <Resolution />;
+    } else {
+      returnVar = <></>;
     }
 
     return returnVar;
