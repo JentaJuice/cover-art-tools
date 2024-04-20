@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Navigation } from "../../Components/Navigation";
+
 import { Resolution } from "./ResolutionCalculator";
+import { TimeCalculator } from "./TimeCalculator";
 
 export function HomePage() {
   const [page, setPage] = useState<string>();
@@ -10,6 +12,8 @@ export function HomePage() {
 
     if (page == "calculator") {
       returnVar = <Resolution />;
+    } else if (page == "timeCal") {
+      returnVar = <TimeCalculator />;
     } else {
       returnVar = <></>;
     }
